@@ -8,3 +8,7 @@
    
 }
 
+.nested {
+    background-color: coral;
+    display: inline-block;    
+}
