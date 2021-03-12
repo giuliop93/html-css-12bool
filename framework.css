@@ -1,4 +1,4 @@
-.wrapper {
+.raw {
     width: 1020px;
     margin: auto;
     background-color: lightcoral;
@@ -10,11 +10,23 @@
     clear: both;
 }
 
-.col-1 {
-    width: calc(100% / 12);
+[class*='col-'] {
+    position: relative;
+    height: 200px;
     border: solid 1px;
     float: left;
-    padding: 50px;
+}
+
+.colcon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-1 {
+    width: calc(100% / 12);
+    
 }
 
 .col-2 {
@@ -56,5 +68,5 @@
     width: calc(100% / 12) * 11;
 }
 .col-12 {
-    width: calc(100% / 12) * 12;
+    width: 100%;
 }
