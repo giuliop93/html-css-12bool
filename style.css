@@ -3,3 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    background-color: lightcoral;
+}
+
+.wrapper {
+    width: 1020px;
+}
+
+.cleaarfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.col-1 {
+    width: (100% / 12);
+    border: solid 1px;
+    float: left;
+    padding: 50%;
+}
